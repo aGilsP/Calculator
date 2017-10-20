@@ -12,7 +12,7 @@ public interface Calculator {
     divide(" / "),
     remainder(" % ");
 
-    private final String symbol;
+    private String symbol;
 
     Operation(String o) {
       symbol = o;

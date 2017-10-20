@@ -49,9 +49,6 @@ public class Logging {
         + " - " + ic.getMethod().getName() + " : " + listParameters.apply(ic.getParameters(), Operation.valueOf(ic.getMethod().getName())) + " = " + obj);
       return obj;
     } finally {
-      //logger.info("<<< "
-      //+ ic.getTarget().toString() 
-      //  + " - " + ic.getMethod().getName());
       logger.exiting(ic.getTarget().toString(), ic.getMethod().getName());
     }
   }
